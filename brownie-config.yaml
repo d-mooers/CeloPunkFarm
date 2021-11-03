@@ -1,0 +1,18 @@
+networks:
+  development:
+    cmd_settings:
+      default_balance: "10000000 ether"
+  live:
+    settings:
+    gas_limit: "auto"
+    gas_price: "auto"
+
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.0.0"
+    version: 0.8.4
+
+
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.0.0
